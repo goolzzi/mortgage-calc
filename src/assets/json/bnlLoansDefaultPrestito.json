@@ -1,0 +1,57 @@
+{
+	"exceptions": {
+		"exception": [
+			{
+				"defCPI": "SI",
+				"_url": "Mutuo-per-Acquisto-Prima-Casa"
+			},
+			{
+				"defCPI": "SI",
+				"_url": "Mutuo-per-Acquisto-altri-immobili"
+			},
+			{
+				"defCPI": "SI",
+				"defImporto": "30000",
+				"_url": "Mutuo-per-ristrutturazioni-o-liquidita"
+			},
+			{
+				"defCPI": "SI",
+				"_url": "Portabilita-del-mutuo"
+			},
+			{
+				"_url": "Mutuo-SPENSIERATO"
+			},
+			{
+				"_url": "Mutuo-emanon-Quasi-Fisso"
+			},
+			{
+				"_url": "MutuoVARIABILEemanon"
+			},
+			{
+				"defAge": "25",
+				"defCPI": "SI",
+				"defImporto": "80000",
+				"defDurata": "10",
+				"defaultOpen": "true",
+				"_url": "http://www.repubblica.it/"
+			},
+			{
+				"defFinalita": "1",
+				"defImporto": "60000",
+				"defReddito": "60000",
+				"defAge": "70",
+				"defCPI": "SI",
+				"defDurata": "20",
+				"minDurata": "12",
+				"maxDurata": "400",
+				"segmento": "mutuoperlacasa",
+				"defaultOpen": "true",
+				"_url": "test"
+			},
+			{
+				"isPrivate": "true",
+				"_url": "privato"
+			}
+		]
+	}
+}

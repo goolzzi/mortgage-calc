@@ -1,0 +1,99 @@
+{
+	"loans": {
+		"loan": {
+			"name": {
+				"ranges": {
+					"range": {
+						"rangeValue": {
+							"_string": "emanon In Novo il Prestito - Tasso fisso"
+						},
+						"_ltype": "",
+						"_type": "eq"
+					}
+				}
+			},
+			"url": {
+				"ranges": {
+					"range": {
+						"rangeValue": {
+							"_string": "https://emanon.it/rsc/contrib/document/Individui-e-Famiglie/SP_Prestiti/PERSONALE_PROMO_PRESTITO.pdf"
+						},
+						"_ltype": "",
+						"_type": "eq"
+					}
+				}
+			},
+			"cap": {
+				"ranges": {
+					"range": {
+						"rangeMatrix": {
+							"rangeMatrix": {
+								"rangeMatrix": {
+									"rangeValue": {
+										"_fixed": "499"
+									},
+									"_eta": "",
+									"_type": "less"
+								},
+								"_reddito": "",
+								"_type": "less"
+							},
+							"_amount": "",
+							"_type": "less"
+						},
+						"_ltype": "",
+						"_type": "eq"
+					}
+				}
+			},
+			"tan": {
+				"ranges": {
+					"range": [
+						{
+							"rangeMatrix": {
+								"rangeMatrix": {
+									"rangeMatrix": {
+										"rangeValue": {
+											"_fixed": "6,5"
+										},
+										"_eta": "",
+										"_type": "less"
+									},
+									"_reddito": "",
+									"_type": "less"
+								},
+								"_amount": "",
+								"_type": "less"
+							},
+							"_durata": "60",
+							"_type": "less"
+						},
+						{
+							"rangeMatrix": {
+								"rangeMatrix": {
+									"rangeMatrix": {
+										"rangeValue": {
+											"_fixed": "6,99"
+										},
+										"_eta": "",
+										"_type": "less"
+									},
+									"_reddito": "",
+									"_type": "less"
+								},
+								"_amount": "",
+								"_type": "less"
+							},
+							"_durata": "",
+							"_type": "else"
+						}
+					]
+				}
+			},
+			"discInv": {
+				"__text": "0"
+			},
+			"_type": "flat"
+		}
+	}
+}

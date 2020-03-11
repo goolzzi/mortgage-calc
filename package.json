@@ -1,0 +1,39 @@
+{
+  "name": "calcolo-prestito",
+  "version": "0.0.1",
+  "description": "Stencil Component Starter",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "es2015": "dist/esm/index.mjs",
+  "es2017": "dist/esm/index.mjs",
+  "types": "dist/types/index.d.ts",
+  "collection": "dist/collection/collection-manifest.json",
+  "collection:main": "dist/collection/index.js",
+  "unpkg": "dist/calcolo-prestito/calcolo-prestito.js",
+  "files": [
+    "dist/",
+    "loader/"
+  ],
+  "scripts": {
+    "build": "stencil build --docs",
+    "start": "stencil build --dev --watch --serve",
+    "test": "stencil test --spec --e2e",
+    "test.watch": "stencil test --spec --e2e --watchAll",
+    "generate": "stencil generate"
+  },
+  "devDependencies": {
+    "@stencil/core": "^1.8.8"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@types/babel-types": "^7.0.7",
+    "@types/google.analytics": "0.0.40",
+    "@types/lodash": "^4.14.149",
+    "@types/npm": "^2.0.31",
+    "@types/react": "^16.9.23",
+    "awesome-typescript-loader": "^5.2.1",
+    "jquery": "^3.4.1",
+    "react": "^16.13.0",
+    "source-map-loader": "^0.2.4"
+  }
+}

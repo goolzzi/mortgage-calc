@@ -1,0 +1,78 @@
+{
+	"loans": {
+		"loan": {
+			"name": {
+				"ranges": {
+					"range": {
+						"rangeValue": {
+							"_string": "Prestito Personale LARGE PROMO"
+						},
+						"_ltype": "",
+						"_type": "eq"
+					}
+				}
+			},
+			"url": {
+				"ranges": {
+					"range": {
+						"rangeValue": {
+							"_string": "https://emanon.it/rsc/contrib/document/Individui-e-Famiglie/SP_Prestiti/PERSONALE_PROMO_PRESTITO.pdf"
+						},
+						"_ltype": "",
+						"_type": "eq"
+					}
+				}
+			},
+			"cap": {
+				"ranges": {
+					"range": {
+						"rangeMatrix": {
+							"rangeMatrix": {
+								"rangeMatrix": {
+									"rangeValue": {
+										"_fixed": "399"
+									},
+									"_eta": "",
+									"_type": "less"
+								},
+								"_reddito": "",
+								"_type": "less"
+							},
+							"_amount": "",
+							"_type": "less"
+						},
+						"_ltype": "",
+						"_type": "eq"
+					}
+				}
+			},
+			"tan": {
+				"ranges": {
+					"range": {
+						"rangeMatrix": {
+							"rangeMatrix": {
+								"rangeMatrix": {
+									"rangeValue": {
+										"_fixed": "6,99"
+									},
+									"_eta": "",
+									"_type": "less"
+								},
+								"_reddito": "",
+								"_type": "less"
+							},
+							"_amount": "",
+							"_type": "less"
+						},
+						"_ltype": "",
+						"_type": "eq"
+					}
+				}
+			},
+			"discInv": {
+				"__text": "0"
+			},
+			"_type": "flat"
+		}
+	}
+}

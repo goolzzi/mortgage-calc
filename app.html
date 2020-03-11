@@ -1,0 +1,119 @@
+<div class={"SimPrest-container"}>
+  <div id="SimPrest-background">
+    <div class={"SimPrest-bgInt"}></div>
+  </div>
+  <div class={"calculator-amortization"}>
+    <div class={"SimPrest-content"}>
+      <div class={"SimPrest-container-step-1"}>
+        <h1 id="startSimPrest">Calcola la rata del tuo prestito</h1>
+        <div class={"SimPrest-descr"}>Inserisci i dati per conoscere la <strong>rata del tuo prestito emanon</strong>;
+          potrai richiedere di essere ricontattato o prendere un appuntamento
+          in agenzia. Il servizio &egrave; gratuito e senza impegno.
+        </div>
+        <div class={"SimPrest-slider-wrapper"}>
+          <div class={"SimPrest-single-slider"}>
+            <label>Importo richiesto</label>
+            <span class={"meno"}>-</span>
+            <div id="sliderImportoPrest" class={"SimPrest-slider"}></div>
+            <span class={"piu"}>+</span>
+            <div class={"completeFormSimPrest"}><input name="txtImportoPrest" class={"simPrestFocus"} type="text" maxlength="9" id="txtImportoPrest" onkeydown="parserXMLPrestito.SalvaValoreInizialeSimPrest(this);" onkeyup="parserXMLPrestito.SistemaPunteggiatura(this);" onblur="parserXMLPrestito.verificaLimitiTextbox(txtImportoPrest,5000,500000,true,false);"/>
+              <input class="nextPrest" maxlength="7" type="number" onblur="parserXMLPrestito.verificaLimitiTextbox2(this,5000,500000,true,false);" />
+              <span  class="unitSimPrest">&euro;</span>
+            </div>
+          </div>
+          <div class="SimPrest-single-slider">
+            <label>Durata</label>
+            <span class="meno">-</span>
+            <div id="sliderDurataPrest" class="SimPrest-slider"></div>
+            <span class="piu">+</span>
+            <div class="completeFormSimPrest"><input type="text" class="simPrestFocus" id="cboDurataPrest" maxlength="3" onkeydown="parserXMLPrestito.SalvaValoreInizialeSimPrest(this);" onblur="parserXMLPrestito.verificaLimitiTextbox(cboDurataPrest,36,120,false,false,true);" ><input class="nextPrest" maxlength="3" type="number" onblur="parserXMLPrestito.verificaLimitiTextbox2(this,36,120,false,false,true);">
+              <span  class="unitSimPrest">Mesi</span>
+            </div>
+          </div>
+          <div class="SimPrest-single-slider last">
+            <label for="cboFinalitaPrest">Finalit&agrave;</label>
+            <div class="SimPrest-styled-select">
+              <select id="cboFinalitaPrest" onchange="parserXMLPrestito.Reset();parserXMLPrestito.aggiornaLimiteImporto(cboFinalitaPrest,txtImportoPrest,5000,500000,true);">
+                <option value="1" data-label="Auto" title="Auto">Auto Moto camper nautica</option>
+                <option value="2" data-label="Casa" title="Casa">Casa</option>
+                <option value="3" data-label="estinzione prestiti" title="estinzione prestiti">Estinzione prestiti</option>
+                <option value="4" data-label="Efficientamento energetico dell'abitazione" title="Efficientamento energetico dell'abitazione">Efficientamento energetico dell'abitazione</option>
+                <option value="5" data-label="spese personali, altro" title="spese personali, altro">Spese personali, altro</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="SimPrest-col-right">
+          <div class="SimPrest-box-wrapper">
+            <label for="txtValoreRedditoPrest">Reddito mensile netto</label>
+            <div class="completeFormSimPrest"><input type="text" class="simPrestFocus" id="txtValoreRedditoPrest" maxlength="9" id="txtValoreRedditoPrest" onkeydown="parserXMLPrestito.SalvaValoreInizialeSimPrest(this);" onkeyup="parserXMLPrestito.SistemaPunteggiatura(this);" onblur="parserXMLPrestito.verificaLimitiTextbox(txtValoreRedditoPrest,0,9999999,false,false);" /><input class="nextPrest" maxlength="7" type="number" onblur="parserXMLPrestito.verificaLimitiTextbox2(this,0,9999999,false,false);" />
+              <span  class="unitSimPrest">&euro;</span>
+            </div>
+            <label for="txtEtaPrest">Et&agrave; del richiedente</label>
+            <div class="completeFormSimPrest"><input type="text" id="txtEtaPrest" onkeydown="parserXMLPrestito.SalvaValoreInizialeSimPrest(this);" onblur="parserXMLPrestito.verificaLimitiTextbox(txtEtaPrest,18,99,false,false);" class="simPrestFocus" maxlength="2"><input type="number" class="nextPrest" maxlength="2" type="number" onblur="parserXMLPrestito.verificaLimitiTextbox2(this,18,99,false,false);"><span  class="unitSimPrest">anni</span></div>
+          </div>
+          <div class="SimPrest-assicurazione">
+            <strong>Assicurazione (facoltativa)</strong>
+            <div class="SimPrest-groupCheckbox">
+              <input id="cboCPIPrest" onchange="parserXMLPrestito.Reset();parserXMLPrestito.aggiornaLimiteImporto(cboCPIPrest,txtImportoPrest,5000,500000,true);" type="checkbox" value="NO" title="Polizza CPI"><label for="cboCPIPrest">S&igrave;, voglio includere l'assicurazione
+              sul prestito *</label>
+              <div class="label" style="padding-left: 30px;"><a href="https://emanon.it/rsc/contrib/document/Individui-e-Famiglie/SP_Prestiti/Informativa_assicurazione.pdf" target="_blank">(Leggi l'informativa)</a></div>
+            </div>
+          </div>
+        </div>
+        <div class="SimPrest-clear"></div>
+        <a id="SimPrest-calcola" href="#" class="SimPrest-submit-button">CALCOLA RATA</a>
+      </div>
+      {/*Risultati post Calcola*/}
+      <div class="SimPrest-container-step-2">
+        <h1 id="afterSimPrest"><a href="#" id="come-backPrest2">CALCOLA LA RATA DEL TUO PRESTITO</a></h1>
+        <div class="simResult">
+          <div class="SimPrest-recap">
+            <div class="SimPrest-col importo">
+              <h3>Importo richiesto</h3>
+              <p id="importoRicPrest"></p>
+            </div>
+            <div class="SimPrest-col durata">
+              <h3>Durata</h3>
+              <p><span id="durataPrest"></span> mesi</p>
+            </div>
+            <div class="SimPrest-col valore">
+              <h3>Reddito<br>men. netto</h3>
+              <p id="valoreRedd"></p>
+            </div>
+            <div class="SimPrest-col eta">
+              <h3>Et&agrave;</h3>
+              <p id="etaPrest"></p>
+            </div>
+            <div class="SimPrest-col assicurazione">
+              <h3>Assicurazione</h3>
+              <p id="CPIPrest"></p>
+            </div>
+            <div class="SimPrest-col cambia-dati">
+              <a href="#" id="come-backPrest">Cambia i dati</a>
+            </div>
+          </div>
+          <div id="accordionSimPrest">
+            <!-- html hardcoded in js -->
+          </div>
+        </div>
+        <div class="accSimPrestCont">
+          <div class="subRowSimPrest recall">
+            <div class="subRowCell">
+              <div class="SimPrestText"><span>Vuoi maggiori dettagli?</span></div>
+            </div>
+            <div class="subRowCell"> <a class="SimPrest-submit-button SimPrest-button-recall" data-index="0">TI CHIAMIAMO NOI</a></div>
+            <div class="subRowCell"><a class="SimPrest-submit-button SimPrest-button-appointment" data-index="0">CHIEDI IN FILIALE</a></div>
+          </div>
+        </div>
+      </div>
+      <!-- END Risultati post Calcola -->
+    </div>
+  </div>
+  <div class="SimPrest-disclaimer">
+    <strong>* Polizza emanon Prestiti Personali e Polizza emanon Prestiti Personali Premium sono coperture assicurative facoltative - emesse da Cardif Assurance Vie e Cardif Assurances Risques Divers e distribuite da emanon - che hanno l'obiettivo di tutelare il Cliente fornendo una protezione dagli eventi che possono compromettere la capacit&agrave; di rimborsare il finanziamento. A titolo esemplificativo si mostra l'informativa e il premio relativo alla Polizza emanon Prestiti Personali dedicata a tutti i clienti che prevede le garanzie Decesso, Invalidit&agrave; Permanente e Inabilit&agrave; Temporanea Totale.
+      Si informa che Polizza emanon Prestiti Personali Premium con garanzia Perdita d'Impiego, dedicata esclusivamente ai clienti lavoratori dipendenti di azienda privata, &egrave; disponibile presso tutte le agenzie emanon. Prima dell'adesione leggere le Condizioni di Assicurazione disponibili presso tutte le Filiali emanon e sui siti <a href="https://www.emanon.it">www.emanon.it</a> e <a href="http://www.bnpparibascardif.it">www.bnpparibascardif.it</a></strong> <br/><br/>
+    Le informazioni ottenute attraverso il sistema di preventivazione on line, e contenute nel modulo IEBCC, sono rappresentative delle condizioni offerte dalla Banca alla data dell'effettuazione del preventivo (e della relativa produzione del modulo); esse non possono dunque considerarsi vincolanti qualora, all'effettiva data di conclusione del contratto, le condizioni pubblicizzate dalla Banca in relazione al prodotto oggetto del presente documento dovessero essere nel frattempo mutate. Inoltre, per motivazioni di carattere strettamente tecnico, le suddette informazioni potrebbero differire in misura non significativa rispetto a quelle contenute nel modulo IEBCC consegnato al cliente nelle Agenzie emanon.
+  </div>
+  <div id="actPlanPrest2"></div>
+</div>

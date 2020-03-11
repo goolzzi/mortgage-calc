@@ -1,0 +1,33 @@
+{
+  "compilerOptions": {
+    "allowSyntheticDefaultImports": true,
+    "allowUnreachableCode": false,
+    "declaration": false,
+    "experimentalDecorators": true,
+    "lib": [
+      "dom",
+      "es2017"
+    ],
+
+    "moduleResolution": "node",
+    "module": "esnext",
+    "target": "es2017",
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "jsx": "react",
+    "allowJs": true,
+    "jsxFactory": "h",
+  },
+  "presets": ["@babel/preset-env", "@babel/preset-react", "@babel/typescript"],
+  "plugins": [
+    "@babel/proposal-class-properties",
+    "@babel/proposal-object-rest-spread"
+  ],
+  "include": [
+    "src",
+    "@types/jsx.d.ts"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}

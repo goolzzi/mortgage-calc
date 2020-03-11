@@ -1,0 +1,866 @@
+   <div> 
+	<table class="main-table">
+        <tr>
+            <td class="simlogo">
+                <img src="https://emanon.it/rsc/comunicazione/calcolo-prestiti/img/logo.gif">
+            </td>
+        </tr>
+        <tr>
+            <td class="titolotabella">
+                INFORMAZIONI EUROPEE DI BASE SUL CREDITO AI CONSUMATORI
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <table class="tabella-esis">
+                    <colgroup>
+                        <col width="30%" />
+                        <col width="70%"/>
+                    </colgroup>
+                    <tr>
+                        <td colspan="2" class="titoloesis">
+                            IDENTITA' E CONTRATTI DEL FINANZIATORE – INTERMEDIARIO DEL CREDITO
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="cella-esis">
+							
+						
+						
+                            Finanziatore<br />
+                            Indirizzo<br />
+                            Telefono<br />
+                            Contatti<br />
+                            Sito web
+                        </td>
+                        <td class="cella-esis">
+                           
+							
+							<b>BANCA NAZIONALE DEL LAVORO Società per Azioni</b><br/>
+							Società soggetta ad attività di direzione e coordinamento del socio unico BNP
+							Paribas S.A. - Parigi<br/>
+							Sede Legale e Amministrativa: Via Vittorio Veneto 119 – 00187 Roma<br/>
+							+39.060.060<br/>
+							<a href='https://emanon.it/it/'>https://emanon.it</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" class="titoloesis">
+                            INTERMEDIARIO DEL CREDITO - DA COMPILARE SOLO IN CASO DI OFFERTA FUORI SEDE
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="cella-esis">
+                            Intermediario del credito<br />
+                            Indirizzo<br />
+                            Telefono<br />
+                            Fax<br />
+                            Sito web
+                        </td>
+                        <td class="cella-esis"><br /><br /><br /><br /><br /><br />
+                            Il sottoscritto dichiara di avere ricevuto copia del presente modulo "Informazioni
+							Europee di base sul credito ai consumatori", nonché copia della "Guida" pratica –
+							Conoscere l'Arbitro Bancario Finanziario, della Guida pratica "Il Credito ai
+							consumatori, in parole semplici" e il documento contenente i Tassi Effettivi Globali
+							Medi (TEGM) previsti dalla legge n. 108/1996 (legge antiusura) dal soggetto sopra
+							indicato.
+                            <br />
+                            <br />
+                            Data ________________________<br />
+                            Firma del/i cliente/i ___________________________
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" class="titoloesis">
+                            CARATTERISTICHE PRINCIPALI DEL PRODOTTO DI CREDITO
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="cella-esis">
+                            Tipo di contratto di Credito
+                        </td>
+                        <td class="cella-esis">
+                            <span>{{name}}</span><br />
+							E' un prestito personale regolato a tasso fisso.<br/>
+							Pertanto rimangono fissi per tutta la durata del prestito sia il tasso di interesse sia
+							l'importo delle singole rate. Il cliente non potrà, pertanto, beneficiare di eventuali
+							riduzioni dei tassi di mercato. Il tasso fisso è consigliabile per chi vuole essere certo,
+							sin dal momento della firma del contratto, della misura del tasso, degli importi delle
+							singole rate e dell'ammontare complessivo del debito da restituire,
+							indipendentemente dalle variazioni delle condizioni di mercato.
+														
+							
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="cella-esis">
+                            Importo totale del credito
+                            <br />
+                           <span class="info">Limite massimo o somma totale degli importi messi a disposizione del consumatore.</span>
+                        </td>
+                        <td class="cella-esis">
+                            <span>{{importoRichiesto2}} €</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="cella-esis">
+                            Condizioni di Prelievo
+                            <br />
+                            <span class="info">Modalità e tempi con i quali
+							il consumatore può utilizzare
+							il credito.</span>
+                        </td>
+                        <td class="cella-esis">
+                            Erogazione in un'unica soluzione al momento del perfezionamento del contratto,
+							secondo la modalità prescelta dal cliente tra quelle consentite dalla Banca.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="cella-esis">
+                            Durata del contratto di credito
+                        </td>
+                        <td class="cella-esis">
+							Durata complessiva: <span>{{numeroRate}} MESI</span>  <br />
+							Durata periodo di preammortamento (compreso l’eventuale preammortamento
+							tecnico): <span>0</span> gg  <br />
+							Durata periodo di ammortamento: <span>{{numeroRate}}</span> mesi
+						
+						
+                            
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="cella-esis">
+                            Rate, ed eventualmente il loro ordine di imputazione
+                        </td>
+                        <td class="cella-esis">
+							Numero rate preammortamento:  <span>0</span><br>
+							
+							Numero rate ammortamento: <span>{{numeroRate}}</span><br />
+							Periodicità: <span>mensile</span><br />
+							Importo rata preammortamento: <span>0</span><br />
+							Importo rata ammortamento: <span>{{importoRata}} €</span><br />
+							I pagamenti saranno imputati nel seguente ordine:<br />
+							<ul>
+								<li>Eventuali interessi di mora</li>
+								<li>Quota interessi</li>
+								<li>Quota capitale</li>
+		
+							</ul>		
+		
+                            Per il dettaglio delle rate vedi piano di ammortamento allegato al contratto.<br />
+							In caso di mancato pagamento, anche di una sola rata, la Banca ha il diritto di
+							considerare risolto il contratto di prestito e il cliente sarà, pertanto, tenuto a
+							rimborsare alla Banca immediatamente l'intero importo residuo.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="cella-esis">
+                            Importo totale dovuto dal consumatore.
+                        </td>
+                        <td class="cella-esis">
+                            <span>{{importoTotale}} €</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="cella-esis">
+                            Garanzie richieste
+                            <br />
+                            <span class="info">Garanzie che il consumatore deve prestare per ottenere il credito.</span>
+                        </td>
+                        <td class="cella-esis">
+                            fideiussione, e/o altre garanzie ritenute idonee dalla Banca
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="cella-esis">
+                            I pagamenti effettuati dal
+							consumatore non
+							comportano
+							l’ammortamento
+							immediato del capitale
+                        </td>
+                        <td class="cella-esis">
+                            <span>NO</span><br /><br />
+							
+							Numero rate di preammortamento (rate di soli interessi): <span>0</span><br />
+							Importo rata preammortamento: <span>0</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" class="titoloesis">
+                            COSTI DEL CREDITO
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="cella-esis">
+                            Tasso di interesse o tassi di interesse diversi che si applicano al contratto del credito
+                        </td>
+                        <td class="cella-esis">
+                            <b>Tasso di interesse di ammortamento:</b><br/>fisso nominale annuo pari al
+                            <span>{{tan2}}%</span>
+                           
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="cella-esis">
+                            Tasso Annuo Effettivo (TAEG)
+                            <br />
+                            <span class="info">Costo totale del credito
+							espresso in percentuale,
+							calcolata su base annua,
+							dell’importo totale del
+							credito.</span>
+                            <br />
+                            <br />
+                            <span class="info">Il TAEG consente al
+							consumatore di confrontare
+							le varie offerte.
+                            </span>
+                        </td>
+                        <td class="cella-esis">
+							Esempio rappresentativo del <b>Tasso Annuo Effettivo Globale</b> (Taeg) rimborsato mediante addebito delle rate su c/c emanon ed invio comunicazioni periodiche in formato elettronico <span>{{taeg}}%</span>
+                            <br />
+                            i. Tasso nominale annuo:
+                            <span>{{tan2}}%</span>
+                            <br />
+                            ii. Importo totale del credito:
+                            <span>€ {{importoRichiesto2}}</span>
+                            <br />
+                            iii. Durata preammortamento:
+							<span>0</span> gg
+                            <br />
+							iv. Durata ammortamento:
+                            <span>{{numeroRate}} mesi</span>
+                            <br />
+							v. Importo rata preammortamento: 
+                            <span>€ 0</span>
+                             <br />
+                            
+                            vi. Importo rata ammortamento:
+                            <span>€ {{importoRata}}</span>
+                            <br />
+                            vii. Costo totale del credito:
+                            <span>€ {{costoTotale}}</span>
+                            composto da:
+                            <br />
+                            &nbsp&nbsp&nbsp a. Commissioni di istruttoria:
+                            <span>€ {{istruttoria}}</span>
+                            <br />
+                            &nbsp&nbsp&nbsp b. Imposta sostitutiva:
+                            <span>€ {{imposta}}</span>
+                            <br />
+                            &nbsp&nbsp&nbsp c. Spese di incasso rata
+                            <br />
+                            &nbsp&nbsp&nbsp d. Spese di invio comunicazioni periodiche
+                            <br />
+                            &nbsp&nbsp&nbsp e. Interessi di ammortamento:
+                            <span>€ {{interessi}}</span>
+                            <br />
+							&nbsp&nbsp&nbsp f. Interessi di preammortamento:
+                            <span>€ 0</span>
+                            <br />
+							
+							
+                            Importo totale dovuto dal consumatore:
+                            <span>€ {{importoTotale}} </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="cella-esis">
+                            Per ottenere il credito o per ottenerlo alle condizioni contrattuali offerte è obbligatorio sottoscrivere:
+                            <ul>
+                                <li>un'assicurazione che garantisca il credito e/o</li>
+                                <li>un altro contratto per un servizio accessorio</li>
+                            </ul>
+                            <span class="info">Se il finanziatore non conosce i costi dei servizi accessori, questi non sono inclusi nel TAEG.</span>
+                        </td>
+                        <td class="cella-esis">
+                            Nessun prodotto accessorio obbligatorio
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" class="titoloesis">
+                            COSTI CONNESSI
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="cella-esis">
+                           Spese di gestione del
+							conto sul quale registrare i
+							rimborsi e i prelievi, se
+							aprire il conto è
+							obbligatorio per contratto
+                        </td>
+                        <td class="cella-esis">
+                            Non obbligatorio.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="cella-esis">
+                            Costi per utilizzare uno
+							specifico strumento di
+							pagamento (ad esempio
+							una carta di credito)
+                        </td>
+                        <td class="cella-esis">
+                            1 euro mensile.<br />
+                            Addebitata solo in caso di modalità di incasso diversa dall’addebito in conto corrente emanon a copertura degli oneri bancari o postali sostenuti.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="cella-esis">
+                            Eventuali altri costi derivanti dal contratto di credito
+							
+							 <span class="info">* Polizza emanon Prestiti Personali e Polizza emanon Prestiti Personali Premium sono coperture assicurative facoltative - emesse da Cardif Assurance Vie e Cardif Assurances Risques Divers e distribuite da emanon - che hanno l'obiettivo di tutelare il Cliente fornendo una protezione dagli eventi che possono compromettere la capacità di rimborsare il finanziamento. A titolo esemplificativo si mostra il costo relativo a Polizza emanon Prestiti Personali, dedicata a tutti i clienti, che prevede le garanzie Decesso, Invalidità Permanente e Inabilità Temporanea Totale. 
+Si informa che Polizza emanon Prestiti Personali Premium con garanzia Perdita d’Impiego, dedicata ai clienti lavoratori dipendenti di azienda privata, è disponibile presso tutte le agenzie emanon.  Nella versione Premium, se l'assicurato in corso di contratto perde lo status di lavoratore dipendente privato. beneficerà della garanzia Inabilità Temporanea Totale anziché della garanzia Perdita d’impiego.
+                            </span>
+                        </td>
+                        <td class="cella-esis">
+                            Nel caso in cui il cliente decida di aderire alla polizza facoltativa e non necessaria ai fini dell’ottenimento del finanziamento:
+                            <br />
+                            <br />
+                            <b>Premio assicurativo Polizza emanon Prestiti Personali*:</b>
+                            <span>€ {{assicurazione}} </span>
+                            <br />
+                            <br />
+                            <b>Commissioni di istruttoria:</b>
+                            <span>€ {{istruttoria}}</span>
+                            <br />
+                            <br />
+                            <b>Spese di incasso rata:</b> 1 euro mensile.
+                            <br />
+                           Addebitata solo in caso di modalità di incasso diversa dall’addebito in conto corrente emanon a copertura degli oneri bancari o postali sostenuti.
+                            <br />
+                            <br />
+                            <b>Spese di invio comunicazioni periodiche:</b>
+                            <ul>
+                                <li>in formato cartaceo: euro 1,00 &euro; per ciascuna comunicazione inviata al cliente
+                                    e agli eventuali garanti</li>
+                                <li>in formato elettronico: gratuito</li>
+                            </ul>
+                           
+							
+							<b>Sospensione pagamento rate:</b> 30,00 &euro;  salvo le richieste di sospensione
+							rientranti nell’ambito di specifici accordi istituzionali, per le quali saranno
+							applicabili le regole contenute nei suddetti accordi
+							Il costo verrà addebitato per ciascuna richiesta di sospensione rata,
+							indipendentemente dal numero di rate sospese.
+							
+                            <br />
+                            <br />
+                            <b>Oneri fiscali:</b>
+                            <ul>
+                                <li>In caso di prestito di durata superiore a 18 mesi: imposta sostitutiva nella misura dello 0,25% dell'importo finanziato del prestito</li>
+                                <li>In caso di prestito di durata pari o inferiore a 18 mesi: al ricorrere dei
+									presupposti di legge, imposte ordinarie d'atto (imposte di registro, di bollo,
+									etc. eventualmente dovute) nella misura pro-tempore vigente</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="cella-esis">
+                            Condizioni in presenza
+							delle quali i costi relativi
+							al contratto di credito
+							possono essere modificati
+                        </td>
+                        <td class="cella-esis">
+                            La Banca, in presenza di un giustificato motivo, sopravvenuto rispetto al momento
+							della conclusione del contratto (ad esempio un incremento dei costi operativi
+							sostenuti dalla Banca), potrà proporre al Cliente la variazione delle spese applicate al
+							rapporto diverse dai tassi d'interesse. A tale fine, la Banca dovrà inviare, con
+							preavviso minimo di due mesi, una proposta di modifica unilaterale, nella quale sarà
+							indicato il giustificato motivo a sostegno della manovra, in modo che il cliente possa
+							effettuare le proprie valutazioni in merito. La modifica si intende approvata ove il
+							cliente non receda, senza spese, dal contratto entro la data prevista per la sua
+							applicazione, alle condizioni precedentemente applicate.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="cella-esis">
+                            Spese notarili
+                        </td>
+                        <td class="cella-esis">
+                            Non previste.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="cella-esis">
+                            Costi in caso di ritardo nel pagamento
+                            <br />
+                            <span class="info">Tardare con i pagamenti
+							potrebbe avere gravi
+							conseguenze per il
+							consumatore (ad esempio la
+							vendita forzata dei beni) e
+							rendere più difficile ottenere
+							altri crediti in futuro.</span>
+                        </td>
+                        <td class="cella-esis">
+                            Per i ritardi di pagamento saranno addebitati al consumatore interessi di mora al tasso di ammortamento
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" class="titoloesis">
+                           ALTRI IMPORTANTI ASPETTI LEGALI
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="cella-esis">
+                            Diritto di recesso
+                            <br />
+                            <span class="info">Il consumatore ha il diritto di
+							recedere dal contratto di
+							credito entro quattordici
+							giorni di calendario dalla
+							conclusione del contratto.</span>
+                        </td>
+                        <td class="cella-esis">
+                            <span>S&igrave;</span>.<br/>
+           
+							Il Cliente può recedere dal contratto entro 14 giorni - senza penali e senza dover
+							indicare il motivo - dalla data di conclusione dello stesso, cioè decorrenti dalla data
+							in cui la Banca ha dato al Cliente la comunicazione della valutazione positiva della
+							richiesta.
+                            <br />
+                           Per recedere, il Cliente deve dare comunicazione alla Banca entro il suddetto termine
+							di 14 giorni inviando una lettera raccomandata, con avviso di ricevimento, al
+							seguente indirizzo: Via Vittorio Veneto 119 - 00187 Roma.
+                            <br />
+                            La comunicazione può essere inviata alla Banca, sempre entro 14 giorni, anche
+							mediante telegramma, telex, posta elettronica e fax presso il Gestore di riferimento, a
+							condizione che sia confermata mediante lettera raccomandata con avviso di
+							ricevimento entro le 48 ore successive.
+                            <br />
+                            Qualora il prestito sia stato già erogato, il Cliente è tenuto:
+                            <ul>
+                                <li>a restituire, entro il termine di 30 giorni dall'invio della suddetta comunicazione, il capitale;</li>
+                                <li>a pagare gli interessi maturati fino al momento della restituzione, calcolati secondo quanto disposto dal contratto;</li>
+                                <li>rimborsare le eventuali somme, corrisposte dalla Banca alla pubblica amministrazione, di cui non è possibile chiedere la restituzione (imposta sostitutiva);</li>
+                            </ul>
+                            Il mancato esercizio del diritto di recesso comporta l'obbligo in capo al cliente di
+							adempiere a tutte le obbligazioni contrattualmente pattuite, alle condizioni e ai
+							termini ivi previsti
+                            <br />
+							
+							Importo giornaliero degli interessi da corrispondere alla Banca in caso di recesso:<br />
+							- preammortamento:  <span>{{recesso}} euro</span><br />
+							- ammortamento:  <span>{{recesso}} euro<span>
+							
+                           
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="cella-esis">
+                            Rimborso anticipato
+                            <br />
+                            <span class="info">Il consumatore ha il diritto di
+							rimborsare il credito anche
+							prima della scadenza del
+							contratto, in qualsiasi mome
+							nto, in tutto o in parte.
+							Il finanziatore ha il diritto a
+							un indennizzo in caso di
+							rimborso anticipato.</span>
+                        </td>
+                        <td class="cella-esis">
+							<span>S&igrave;</span>.<br/>
+							L'indennizzo sarà pari: 
+							
+							 <ul>
+                                <li>all'1 per cento dell'importo rimborsato in anticipo, se la vita residua del contratto è
+							superiore a un anno;</li>
+                                <li>allo 0,5 per cento del medesimo importo, se la vita residua del contratto è pari o
+							inferiore a un anno.</li>
+                            </ul>
+							
+						
+							In ogni caso, l'indennizzo non può superare l'importo degli interessi che il
+							consumatore avrebbe pagato per la vita residua del contratto. <br />
+							L'indennizzo non è dovuto: <br />
+							a) in caso di estinzione anticipata conseguente a portabilità ex art. 120 quater del
+							D.Lgs. 385/1993; <br />
+							b)se il rimborso anticipato è effettuato in esecuzione di un contratto di
+							assicurazione destinato a garantire il credito; <br />
+							c) se l'importo rimborsato anticipatamente corrisponde all'intero debito residuo
+							ed è pari o inferiore a 10.000 euro.
+						
+                           
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="cella-esis">
+                           Consultazione di una banca dati
+                            <br />
+                            <span class="info">Se il finanziatore rifiuta la
+							domanda di credito dopo
+							aver consultato una banca
+							dati, il consumatore ha il
+							diritto di essere informato
+							immediatamente e
+							gratuitamente del risultato
+							della consultazione. Il
+							consumatore non ha questo
+							diritto se comunicare tale
+							informazione è vietato dalla
+							normativa comunicata o è contrario all’ordine pubblico
+							o alla pubblica sicurezza.</span>
+                        </td>
+                        <td class="cella-esis">
+                            Le banche dati che verranno consultate per l’istruttoria del prestito, a fronte di apposita sottoscrizione di richiesta del finanziamento, sono:
+                            <br />
+                            1. <b>CRIF S.p.A.</b>, con sede legale in Bologna, Ufficio Relazioni con il Pubblico:
+							Via Montebello 2/2, 40121 Bologna. Fax: 051 6458940 Tel: 051 6458900.
+							Sito Internet: <a href="http://www.consumatori.crif.com" target="_blank">www.consumatori.crif.com</a>
+                            <br />
+                            2. <b>Cerved Group SpA</b>, con sede in Corso Italia, 8 – 20122 Milano; Recapiti
+							Utili: Ufficio Privacy, Via G.B. Morgagni, 30/H - 00161 Roma; fax: 06 44
+							110 764; e-mail: <a href="mailto:privacy@cerved.com">privacy@cerved.com</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="cella-esis">
+                            Diritto a ricevere copia del contratto<br />
+                            <span class="info">Il consumatore ha il diritto,
+							su sua richiesta, di ottenere
+							gratuitamente copia del
+							contratto di credito idonea
+							per la stipula. Il consumatore
+							non ha questo diritto se il
+							finanziatore, al momento
+							della richiesta, non intende
+							concludere il contratto</span>
+                        </td>
+                        <td class="cella-esis">
+                            <span>S&igrave;</span>.<br/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="cella-esis">
+                            Periodo di validità dell’offerta
+                        </td>
+                        <td class="cella-esis">
+                            &nbsp;
+                        </td>
+                    </tr>
+					
+					 <tr>
+                        <td colspan="2" class="titoloesis">
+                            INFORMAZIONI SUPPLEMENTARI IN CASO DI COMMERCIALIZZAZIONE A DISTANZA DI SERVIZI FINANZIARI
+                        </td>
+                    </tr>
+					<tr>
+                        <td colspan="2" class="cella-esis">
+                            <b>a) Finanziatore</b>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="cella-esis">
+							
+						
+						
+                            Finanziatore<br />
+                            Indirizzo<br />
+                            Telefono<br />
+                            Contatti<br />
+                            Sito web
+                        </td>
+                        <td class="cella-esis">
+                           
+							
+							<b>BANCA NAZIONALE DEL LAVORO Società per Azioni</b><br/>
+							Società soggetta ad attività di direzione e coordinamento del socio unico BNP Paribas S.A. - Parigi<br/>
+							Sede Legale e Amministrativa: Via Vittorio Veneto 119 – 00187 Roma<br/>
+							+39.060.060<br/>
+							<a href='https://emanon.it/it/'>https://emanon.it</a>
+                        </td>
+                    </tr>
+					
+					
+					<tr>
+                        <td class="cella-esis">
+							Iscrizione
+                        </td>
+                        <td class="cella-esis">
+                           Iscritta all'Albo delle banche al n. 5676 e capogruppo del gruppo bancario emanon -
+							iscritto all'Albo dei gruppi bancari presso la Banca d'Italia al n. 1005<br/>
+							Società soggetta ad attività di direzione e coordinamento del socio unico BNP
+							Paribas S.A. Parigi<br/>
+							Aderente al Fondo Interbancario di Tutela dei Depositi<br/>
+							Codice Fiscale, Partita Iva e n. di iscrizione nel Registro delle Imprese di Roma al
+							numero 09339391006<br/>
+							Capitale Sociale: Euro 2.076.940.000
+                        </td>
+                    </tr>
+					<tr>
+                        <td class="cella-esis">
+							Autorità di controllo
+                        </td>
+                        <td class="cella-esis">
+                           Banca d’Italia
+                        </td>
+                    </tr>
+					<tr>
+                        <td colspan="2" class="cella-esis">
+                            <b>b) Contratto di Credito</b>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="cella-esis">
+							
+							diritto di recesso
+                        </td>
+                        <td class="cella-esis">
+                          <span>S&igrave;</span>.<br/>
+							Il Cliente può recedere dal contratto entro 14 giorni dalla data di sottoscrizione dello
+							stesso senza penali e senza dover indicare il motivo.<br/>
+							Per recedere, il Cliente deve dare comunicazione alla Banca entro il suddetto termine
+							di 14 giorni inviando una lettera raccomandata con avviso di ricevimento, al
+							seguente indirizzo: Via Vittorio Veneto 119 - 00187 Roma. La comunicazione può
+							essere inviata alla Banca, sempre entro 14 giorni, anche mediante telegramma, telex,
+							posta elettronica e fax presso il Gestore di riferimento, a condizione che sia
+							confermata mediante lettera raccomandata con avviso di ricevimento entro le 48 ore
+							successive.<br/>
+							Qualora il prestito sia stato già erogato, il Cliente è tenuto:
+							<ul>
+								<li>a restituire, entro il termine di 30 giorni dall'invio della suddetta
+							comunicazione, il capitale;</li>
+								<li>a pagare gli interessi maturati fino al momento della restituzione, calcolati
+							secondo quanto disposto dal contratto;</li>
+								<li>rimborsare le eventuali somme, corrisposte dalla Banca alla pubblica
+							amministrazione, di cui non è possibile chiedere la restituzione (imposta
+							sostitutiva);</li>
+							</ul>
+							
+							
+							Il mancato esercizio del diritto di recesso comporta l'obbligo in capo al cliente di
+							adempiere a tutte le obbligazioni contrattualmente pattuite, alle condizioni e ai
+							termini ivi previsti.
+                        </td>
+                    </tr>
+					<tr>
+                        <td class="cella-esis">
+							Legge applicabile alle
+							relazioni con il
+							consumatore nella fase
+							precontrattuale
+                        </td>
+                        <td class="cella-esis">
+                           Legge italiana
+                        </td>
+                    </tr>
+					
+					<tr>
+                        <td class="cella-esis">
+							Legge applicabile al contratto di credito e/o foro competente
+                        </td>
+                        <td class="cella-esis">
+                           Legge italiana<br/>
+						   Foro competente: luogo di residenza o di domicilio del consumatore, se ubicati nel territorio dello Stato.
+                        </td>
+                    </tr>
+					
+					<tr>
+                        <td class="cella-esis">
+							Lingua
+                        </td>
+                        <td class="cella-esis">
+                           Le informazioni sul contratto saranno comunicate in lingua italiana. Con l'accordo del consumatore, il finanziatore intende comunicare in lingua italiana nel corso del rapporto contrattuale.
+                        </td>
+                    </tr>
+					<tr>
+                        <td colspan="2" class="cella-esis">
+                            <b>c) Reclami e ricorsi</b>
+                        </td>
+                    </tr>
+					<tr>
+                        <td class="cella-esis">
+							Strumenti di tutela stragiudiziale e modalità per accedervi
+                        </td>
+                        <td class="cella-esis">
+                           Per eventuali contestazioni relative all’interpretazione ed applicazione del presente
+							contratto, il Cliente può presentare reclamo all’Ufficio Reclami della "Banca", Via
+							Vittorio Veneto 119, 00187 Roma, indirizzo e-mail <a href="mailto:reclami@emanonmail.com">reclami@emanonmail.com</a>, indirizzo di posta elettronica certificata <a href="mailto:reclami@pec.emanonmail.com">reclami@pec.emanonmail.com</a>, che risponde entro 30
+							giorni dal ricevimento.<br/>
+							Se il Cliente non è soddisfatto o non ha ricevuto risposta entro 30 giorni, prima di
+							ricorrere all'autorità giudiziaria, può alternativamente:<br/>
+							a) attivare presso organismi di conciliazione accreditati, tra i quali il
+							Conciliatore Bancario Finanziario - Associazione per la soluzione delle
+							controversie bancarie, finanziarie e societarie - ADR(
+							<a href="http://www.conciliatorebancario.it">www.conciliatorebancario.it</a>), qualunque sia il valore della controversia -
+							sia congiuntamente alla Banca che in autonomia- una procedura di
+							conciliazione al fine di trovare un accordo con la Banca per la soluzione
+							delle controversie relative al rapporto. Resta impregiudicata la facoltà di
+							ricorrere all'autorità giudiziaria nel caso in cui la conciliazione si dovesse
+							concludere senza il raggiungimento di un accordo, secondo quanto più
+							avanti precisato;<br/>
+							b) rivolgersi all'Arbitro Bancario Finanziario (ABF), organo competente per le
+							controversie relative ad operazioni o comportamenti successivi al 1°
+							gennaio 2009, a condizione che l'importo richiesto non sia superiore a
+							100.000 euro e sempre che non siano trascorsi più di 12 mesi dalla
+							presentazione del reclamo alla Banca. Per sapere come rivolgersi all'Arbitro
+							si può consultare il sito <a href="http://www.arbitrobancariofinanziario.it">www.arbitrobancariofinanziario.it</a>, chiedere presso
+							le Filiali della Banca d'Italia oppure alla Banca. Le decisioni dell'ABF non
+							sono vincolanti per le parti che hanno sempre la facoltà di ricorrere
+							all'autorità giudiziaria, sempre tenendo conto di quanto più avanti precisato;<br/>
+							c) attivare presso il suddetto Conciliatore Bancario Finanziario, qualunque sia
+							il valore della controversia, una procedura arbitrale (ai sensi degli artt. 806
+							e ss. del c.p.c), a norma del Regolamento da esso emanato, consultabile sul
+							predetto sito.<br/>
+							In ogni caso, il Cliente, per poter fare causa alla Banca davanti al Giudice Ordinario,
+							deve prima alternativamente:<br/>
+							- effettuare il tentativo di mediazione obbligatoria, previsto e disciplinato dal
+							D.Lgs. 28/2010 (e successive modifiche della L.98/2013), ricorrendo ad
+							uno degli organismi di mediazione iscritti nell'apposito registro (tra i quali
+							il predetto Conciliatore Bancario Finanziario);<br/>
+							- esperire il procedimento davanti al citato Arbitro Bancario Finanziario
+							(ABF)
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <table class="main-table">	
+	<tbody>
+			<tr>
+            <td colspan="6" class="pd6">
+                <span>Le informazioni ottenute attraverso il sistema di preventivazione on line, e contenute nel modulo IEBCC, sono rappresentative delle condizioni offerte dalla Banca alla data dell'effettuazione del preventivo (e della relativa produzione del modulo); esse non possono dunque considerarsi vincolanti qualora, all'effettiva data di conclusione del contratto, le condizioni pubblicizzate dalla Banca in relazione al prodotto oggetto del presente documento dovessero essere nel frattempo mutate. Inoltre, per motivazioni di carattere strettamente tecnico, le suddette informazioni potrebbero differire in misura non significativa rispetto a quelle contenute nel modulo IEBCC consegnato al cliente nelle Agenzie emanon.</span>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="6" class="titolotabella">
+                SIMULAZIONE PIANO DI AMMORTAMENTO DEL FINANZIAMENTO RICHIESTO
+            </td>
+        </tr>
+
+            <tr>
+                <td colspan="6">
+                    <table class="tabella-esis">
+                        <colgroup>
+                            <col width="30%">
+                            <col>
+                        </colgroup>
+                        <tbody><tr>
+                            <td class="pd6">
+                                IMPORTO FINANZIATO
+                            </td>
+                            <td class="pd6">
+                                <span>{{importoFinanziato}} €</span>
+                            </td>
+                        </tr>
+                    </tbody></table>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="6">
+                    <table class="tabella-esis">
+                        <colgroup>
+                            <col width="30%">
+                            <col width="20%">
+                            <col width="40%">
+                            <col width="10%">
+                        </colgroup>
+                        <tbody><tr>
+                            <td class="pd6">
+                                INTERESSI DI PREAMMORTAMENTO
+                            </td>
+                            <td class="pd6" colspan="3">
+                                <span>0 €</span>
+                            </td>
+                          
+                        </tr>
+						
+						<tr>
+                            <td class="pd6">
+                                IMPORTO RATA AMM
+                            </td>
+                            <td class="pd6">
+                                <span>{{importoRata}} €</span>
+                            </td>
+							<td class="pd6">
+                                TASSO NOMINALE ANNUO
+                            </td>
+                            <td class="pd6">
+                                <span>{{tan2}}%</span>
+                            </td>
+                          
+                        </tr>
+						<tr>
+                            <td class="pd6">
+                                NUMERO RATE
+                            </td>
+                            <td class="pd6">
+                                <span>{{numeroRate}}</span>
+                            </td>
+							<!--
+                            <td class="pd6">
+                                TASSO EFFETTIVO RAPPORTATO SU BASE ANNUA 
+                            </td>
+                            <td class="pd6">
+                                <span>{{tanE}}%</span>
+                            </td>
+							-->
+                        </tr>
+						
+						<tr>
+                            <td class="pd6">
+                                PREMIO ASSICURAZIONE
+                            </td>
+                            <td class="pd6" colspan="3">
+                                <span>{{assicurazione}} €</span>
+                            </td>
+                           
+                        </tr>
+						
+						
+						<tr>
+                            <td class="pd6">
+                                COMMISSIONI
+                            </td>
+                            <td class="pd6">
+                                <span>{{istruttoria}} €</span>
+                            </td>
+                            <td class="pd6">
+                                TASSO ANNUO EFFETTIVO GLOBALE (TAEG/ISC)
+                            </td>
+                            <td class="pd6 destra">
+                                <span>{{taeg}}%</span>
+                            </td>
+                        </tr>
+						
+                        <tr>
+                            <td class="pd6">
+                                IMPORTO PAM RATEIZZATO
+                            </td>
+                            <td class="pd6">
+                                <span>0 €</span>
+                            </td>
+                            <td class="pd6">
+                                TASSO DI PREAMMORTMENTO
+                            </td>
+                            <td class="pd6 destra">
+                                <span>0,000%</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="pd6">
+                                IMPOSTA SOSTITUTIVA
+                            </td>
+                            <td class="pd6">
+                                <span>{{imposta}} €</span>
+                            </td>
+                         
+                        </tr>
+                        
+                        
+                        
+                        
+                    </tbody></table>
+                </td>
+            </tr>
+        </tbody>
+</table>
+</div>

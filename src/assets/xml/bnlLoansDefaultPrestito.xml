@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<exceptions>
+	<exception url="Mutuo-per-Acquisto-Prima-Casa">
+		<defCPI>SI</defCPI>
+	</exception>
+	<exception url="Mutuo-per-Acquisto-altri-immobili">
+		<defCPI>SI</defCPI>
+	</exception>
+	<exception url="Mutuo-per-ristrutturazioni-o-liquidita">
+		<defCPI>SI</defCPI>
+		<defImporto>30000</defImporto>
+	</exception>
+	<exception url="Portabilita-del-mutuo">
+		<defCPI>SI</defCPI>
+	</exception>
+	<exception url="Mutuo-SPENSIERATO">
+
+	</exception>
+	<exception url="Mutuo-emanon-Quasi-Fisso">
+
+	</exception>
+	<exception url="MutuoVARIABILEemanon">
+
+	</exception>
+	<exception url="http://www.repubblica.it/">
+
+		<defAge>25</defAge>
+		<defCPI>SI</defCPI>
+		<defImporto>80000</defImporto>
+		<defDurata>10</defDurata>
+		<defaultOpen>true</defaultOpen>
+	</exception>
+	<exception url="test">
+
+		<defFinalita>1</defFinalita>
+		<defImporto>60000</defImporto>
+		<defReddito>60000</defReddito>
+		<defAge>70</defAge>
+		<defCPI>SI</defCPI>
+
+		<defDurata>20</defDurata>
+		<minDurata>12</minDurata>
+		<maxDurata>400</maxDurata>
+		<segmento>mutuoperlacasa</segmento>
+		<defaultOpen>true</defaultOpen>
+	</exception>
+	<exception url="privato">
+		<isPrivate>true</isPrivate>
+	</exception>
+</exceptions>

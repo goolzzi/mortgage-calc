@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<loans>
+	<loan type="flat">
+		<name>
+			<ranges>
+		
+				<range ltype="" type="eq">
+					<rangeValue string="Prestito Personale LARGE PROMO"/>
+				</range>
+			</ranges>
+		</name>
+		<url>
+			<ranges>
+				
+				<range ltype="" type="eq">
+					<rangeValue string="https://emanon.it/rsc/contrib/document/Individui-e-Famiglie/SP_Prestiti/PERSONALE_PROMO_PRESTITO.pdf"/>
+				</range>
+			</ranges>
+		</url>
+		
+		
+		<cap>
+			<ranges>
+					<range ltype="" type="eq">
+							
+							<rangeMatrix amount="" type="less">
+								<rangeMatrix reddito="" type="less">
+									<rangeMatrix eta="" type="less"><rangeValue fixed="399"/></rangeMatrix>
+									
+								
+								
+								</rangeMatrix>
+							</rangeMatrix>
+					</range>
+			
+				
+				
+			
+			</ranges>
+		</cap>
+		<tan>
+			<ranges>
+					
+					<range ltype="" type="eq">
+							
+							<rangeMatrix amount="" type="less">
+								<rangeMatrix reddito="" type="less">
+									<rangeMatrix eta="" type="less"><rangeValue fixed="6,99"/></rangeMatrix>
+								</rangeMatrix>
+							</rangeMatrix>
+					</range>
+					
+			
+			
+			</ranges>	
+		</tan>
+		<discInv>
+			<!-- Sconto Spese  Istruttoria % -->0</discInv>
+	
+	</loan>
+</loans>
